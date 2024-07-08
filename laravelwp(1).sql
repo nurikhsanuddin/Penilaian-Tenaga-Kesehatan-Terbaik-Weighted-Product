@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 24, 2024 at 10:19 PM
+-- Generation Time: Jul 08, 2024 at 07:51 PM
 -- Server version: 8.0.30
--- PHP Version: 8.3.2
+-- PHP Version: 8.3.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -90,7 +90,27 @@ INSERT INTO `assessments` (`id`, `user_uuid`, `criteria_id`, `value`, `month`, `
 (112, '5128018d-bac6-4313-bede-af4cb320bbef', 1, '3', '5', '2024', '2024-05-24 14:25:18', '2024-05-24 14:25:18'),
 (113, '5128018d-bac6-4313-bede-af4cb320bbef', 2, '3', '5', '2024', '2024-05-24 14:25:18', '2024-05-24 14:25:18'),
 (114, '5128018d-bac6-4313-bede-af4cb320bbef', 3, '5', '5', '2024', '2024-05-24 14:25:18', '2024-05-24 14:25:18'),
-(115, '5128018d-bac6-4313-bede-af4cb320bbef', 4, '2', '5', '2024', '2024-05-24 14:25:18', '2024-05-24 14:25:18');
+(115, '5128018d-bac6-4313-bede-af4cb320bbef', 4, '2', '5', '2024', '2024-05-24 14:25:18', '2024-05-24 14:25:18'),
+(116, '6f0cc33f-4f7f-4488-9a32-5908652f5941', 1, '4', '5', '2024', '2024-05-26 06:26:07', '2024-05-26 06:26:07'),
+(117, '6f0cc33f-4f7f-4488-9a32-5908652f5941', 2, '4', '5', '2024', '2024-05-26 06:26:07', '2024-05-26 06:26:07'),
+(118, '6f0cc33f-4f7f-4488-9a32-5908652f5941', 3, '4', '5', '2024', '2024-05-26 06:26:07', '2024-05-26 06:26:07'),
+(119, '6f0cc33f-4f7f-4488-9a32-5908652f5941', 4, '3', '5', '2024', '2024-05-26 06:26:07', '2024-05-26 06:26:07'),
+(120, '7046c342-79e2-4863-8762-11cfc5dc8612', 1, '2', '5', '2024', '2024-05-26 06:26:26', '2024-05-26 06:26:26'),
+(121, '7046c342-79e2-4863-8762-11cfc5dc8612', 2, '2', '5', '2024', '2024-05-26 06:26:26', '2024-05-26 06:26:26'),
+(122, '7046c342-79e2-4863-8762-11cfc5dc8612', 3, '3', '5', '2024', '2024-05-26 06:26:26', '2024-05-26 06:26:26'),
+(123, '7046c342-79e2-4863-8762-11cfc5dc8612', 4, '4', '5', '2024', '2024-05-26 06:26:26', '2024-05-26 06:26:26'),
+(124, '8d601826-7e9f-47cc-b756-770f3c03b8d5', 1, '5', '5', '2024', '2024-05-26 06:26:51', '2024-05-26 06:26:51'),
+(125, '8d601826-7e9f-47cc-b756-770f3c03b8d5', 2, '4', '5', '2024', '2024-05-26 06:26:51', '2024-05-26 06:26:51'),
+(126, '8d601826-7e9f-47cc-b756-770f3c03b8d5', 3, '5', '5', '2024', '2024-05-26 06:26:51', '2024-05-26 06:26:51'),
+(127, '8d601826-7e9f-47cc-b756-770f3c03b8d5', 4, '5', '5', '2024', '2024-05-26 06:26:51', '2024-05-26 06:26:51'),
+(128, 'face50dd-d119-4a68-a2dc-5e217771a0d4', 1, '3', '5', '2024', '2024-05-26 06:27:07', '2024-05-26 06:27:07'),
+(129, 'face50dd-d119-4a68-a2dc-5e217771a0d4', 2, '3', '5', '2024', '2024-05-26 06:27:07', '2024-05-26 06:27:07'),
+(130, 'face50dd-d119-4a68-a2dc-5e217771a0d4', 3, '4', '5', '2024', '2024-05-26 06:27:07', '2024-05-26 06:27:07'),
+(131, 'face50dd-d119-4a68-a2dc-5e217771a0d4', 4, '4', '5', '2024', '2024-05-26 06:27:07', '2024-05-26 06:27:07'),
+(132, '9baf31a7-4ba0-459d-8c3d-10ee6620dee0', 1, '4', '5', '2024', '2024-05-26 06:27:24', '2024-05-26 06:27:24'),
+(133, '9baf31a7-4ba0-459d-8c3d-10ee6620dee0', 2, '5', '5', '2024', '2024-05-26 06:27:24', '2024-05-26 06:27:24'),
+(134, '9baf31a7-4ba0-459d-8c3d-10ee6620dee0', 3, '5', '5', '2024', '2024-05-26 06:27:24', '2024-05-26 06:27:24'),
+(135, '9baf31a7-4ba0-459d-8c3d-10ee6620dee0', 4, '1', '5', '2024', '2024-05-26 06:27:24', '2024-05-26 06:27:24');
 
 -- --------------------------------------------------------
 
@@ -169,11 +189,12 @@ INSERT INTO `users` (`uuid`, `name`, `email`, `password`, `phone_number`, `addre
 ('39ccd1e2-2cea-46b4-9681-c617a0fa0725', 'A3', 'fajar@gmail.com', '$2y$10$pgNIdlIpbdonZpotqlC38.R7nzk8K43YLfKqSZCRKRElUHgzEm3cy', '082340352709', 'JL. Anggrek No 18', 'karyawan', '2023-06-18 19:35:41', '2024-05-24 14:26:19'),
 ('4e1ae9bd-2118-44e0-96d3-da51f57a7b5e', 'A4', 'ikhsan@gmail.com', '$2y$10$mxiewxNQE4Pc9bS2ZNQT9.52AzkmTaT.WLHdiSgube4fA1rTUeQ02', '085454545454', 'solo', 'karyawan', '2024-05-24 13:43:47', '2024-05-24 14:26:30'),
 ('5128018d-bac6-4313-bede-af4cb320bbef', 'A5', 'ali@gmail.com', '$2y$10$8VSCj9.HmNMAqCflyiT9u.kWVsZwde6DhjN5fqMt2/kLMmxRpUnuu', '081340358787', 'JL. Anggrek No 6', 'karyawan', '2023-06-18 19:36:52', '2024-05-24 14:26:43'),
-('6f0cc33f-4f7f-4488-9a32-5908652f5941', 'Putra', 'putra@gmail.com', '$2y$10$paXVOWx7xkBEP0HzgRs5buHf29oUzIhgE7N6rNN2FkL860ClF3hRK', '082346352709', 'JL. Anggrek No 45', 'karyawan', '2023-06-18 19:36:06', '2023-06-18 19:36:06'),
-('7046c342-79e2-4863-8762-11cfc5dc8612', 'Dini', 'dini@gmail.com', '$2y$10$dR8bzz7hWlXhq8ZEH0x63umL.ZoL1PqHECAvYlIpCeFGitgPiOS.a', '081340358702', 'JL. Anggrek No 12', 'karyawan', '2023-06-18 19:36:29', '2023-06-18 19:36:29'),
-('8d601826-7e9f-47cc-b756-770f3c03b8d5', 'Doni', 'doni@gmail.com', '$2y$10$tsf7sF7QoHIUj2bsMzetMe2vUGxwYWL30AU7QnVPrRSo7Zm/rtmjC', '082340612702', 'JL. Anggrek No 18', 'karyawan', '2023-06-18 19:34:53', '2023-06-18 19:34:53'),
+('6f0cc33f-4f7f-4488-9a32-5908652f5941', 'A6', 'putra@gmail.com', '$2y$10$paXVOWx7xkBEP0HzgRs5buHf29oUzIhgE7N6rNN2FkL860ClF3hRK', '082346352709', 'JL. Anggrek No 45', 'karyawan', '2023-06-18 19:36:06', '2024-05-26 06:23:25'),
+('7046c342-79e2-4863-8762-11cfc5dc8612', 'A7', 'dini@gmail.com', '$2y$10$dR8bzz7hWlXhq8ZEH0x63umL.ZoL1PqHECAvYlIpCeFGitgPiOS.a', '081340358702', 'JL. Anggrek No 12', 'karyawan', '2023-06-18 19:36:29', '2024-05-26 06:23:37'),
+('8d601826-7e9f-47cc-b756-770f3c03b8d5', 'A8', 'doni@gmail.com', '$2y$10$tsf7sF7QoHIUj2bsMzetMe2vUGxwYWL30AU7QnVPrRSo7Zm/rtmjC', '082340612702', 'JL. Anggrek No 18', 'karyawan', '2023-06-18 19:34:53', '2024-05-26 06:23:55'),
+('9baf31a7-4ba0-459d-8c3d-10ee6620dee0', 'A10', 'herawatipuspitaningrum00@gmail.com', '$2y$10$08L6HebnOQLioYlsTIDJne/fi2hxFUxOsSuj7XHaGGpaSpzSoY9mi', '085156726352', 'ngruki', 'karyawan', '2024-05-26 06:25:31', '2024-05-26 06:25:31'),
 ('dd483a1c-0d0b-11ee-9696-d05f643b5f59', 'admin', 'admin', '$2y$10$dR8bzz7hWlXhq8ZEH0x63umL.ZoL1PqHECAvYlIpCeFGitgPiOS.a', '082340372701', 'Jl Subandi 12', 'hr', NULL, NULL),
-('face50dd-d119-4a68-a2dc-5e217771a0d4', 'Hari', 'hari@gmail.com', '$2y$10$36QTV9bN2MUlTpqSLjYJmeb90RrP5awAEexqmIZZWho30C5rQfqg2', '082340352702', 'JL. Anggrek No 4', 'karyawan', '2023-06-18 04:33:55', '2023-06-18 19:34:15');
+('face50dd-d119-4a68-a2dc-5e217771a0d4', 'A9', 'hari@gmail.com', '$2y$10$36QTV9bN2MUlTpqSLjYJmeb90RrP5awAEexqmIZZWho30C5rQfqg2', '082340352702', 'JL. Anggrek No 4', 'karyawan', '2023-06-18 04:33:55', '2024-05-26 06:24:09');
 
 --
 -- Indexes for dumped tables
@@ -214,7 +235,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `assessments`
 --
 ALTER TABLE `assessments`
-  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=116;
+  MODIFY `id` bigint UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=136;
 
 --
 -- AUTO_INCREMENT for table `criterias`

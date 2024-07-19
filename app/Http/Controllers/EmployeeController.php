@@ -30,7 +30,7 @@ class EmployeeController extends Controller
             'name' => 'required|max:255',
             'email' => 'required|unique:users|email:dns|max:255',
             'password' => 'required|min:5|max:255',
-            'phone_number' => 'required|numeric|digits_between:10,13|unique:users',
+            'phone_number' => 'required|numeric|',
             'address' => 'required|max:255',
         ]);
 
@@ -56,7 +56,7 @@ class EmployeeController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|max:255',
             'email' => 'required|email:dns|max:255|unique:users,email,' . $employee->uuid . ',uuid',
-            'phone_number' => 'required|numeric|digits_between:10,13|unique:users,phone_number,' . $employee->uuid . ',uuid',
+            'phone_number' => 'required|numeric|',
             'address' => 'required|max:255',
         ]);
 
